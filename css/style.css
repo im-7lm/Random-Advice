@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --Light-cyan: hsl(193, 38%, 86%);
+  --Neon-green: hsl(150, 100%, 66%);
+
+  --Grayish-blue: hsl(217, 19%, 38%);
+  --Dark-grayish-blue: hsl(217, 19%, 24%);
+  --Dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.quote-card {
+  position: relative;
+  background-color: var(--Dark-grayish-blue);
+  padding: 39px;
+  width: 565px;
+  max-height: 300px;
+  border-radius: 18px;
+}
+
+.quote-card p {
+  color: var(--Neon-green);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+.quote-card .quote-content {
+  text-align: center;
+  color: var(--Light-cyan);
+  font-size: 30px;
+}
+
+.quote-card .quote-mob {
+  display: none;
+}
+
+.quote-card .quote-desk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 0;
+}
+
+.quote-card .get-quote {
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--Neon-green);
+  padding: 15px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.quote-card .get-quote:hover {
+  -webkit-box-shadow: 0px 0px 60px 9px rgba(12, 237, 125, 0.69);
+  -moz-box-shadow: 0px 0px 60px 9px rgba(12, 237, 125, 0.69);
+  box-shadow: 0px 0px 60px 9px rgba(12, 237, 125, 0.69);
+}
